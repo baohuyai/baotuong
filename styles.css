@@ -1,0 +1,484 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-title {
+    color: #b71c1c;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+  }
+  
+  /* Intro Text */
+  .intro-text {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  /* Section Styles */
+  section, .section {
+    margin-bottom: 40px; /* Khoảng cách giữa các section */
+  }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #8B0000;
+    text-transform: uppercase;
+  }
+  
+  .subtitle-section {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  .article-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  /* Column Layout for Section I */
+  .column {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Column-specific layouts */
+  .column-1, .column-3 {
+    justify-content: space-between;
+  }
+  
+  .column-2 {
+    justify-content: space-between;
+  }
+  
+  .column-1 .text, .column-3 .text {
+    order: 1;
+    flex: 1;
+  }
+  
+  .column-1 .image, .column-3 .image {
+    order: 2;
+    flex: 1;
+  }
+  
+  .column-2 .image {
+    order: 1;
+    flex: 1;
+  }
+  
+  .column-2 .text {
+    order: 2;
+    flex: 1;
+  }
+  
+  .text {
+    padding: 10px;
+    text-align: justify;
+    font-size: 14px;
+  }
+  
+  .image {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Caption */
+  .caption {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .source {
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: right;
+  }
+  
+  /* Bố cục hai cột cho Phần II */
+  .two-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .column-left, .column-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Poetry section styling */
+  .poetry {
+    margin-bottom: 20px;
+    background-color: #f9f9f5;
+    padding: 15px;
+    border-left: 3px solid #b71c1c;
+  }
+  
+  .poetry h3 {
+    color: #b71c1c;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .poem-text {
+    font-style: italic;
+    line-height: 1.4;
+    font-size: 13px;
+  }
+  
+  .poem-text p {
+    margin-bottom: 5px;
+  }
+  
+  /* Historical images styling */
+  .historical-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .historical-images img {
+    width: 100%;
+    border: 1px solid #ddd;
+    display: block;
+  }
+  
+  /* Video section styling */
+  .video-section {
+    margin-bottom: 20px;
+  }
+  
+  .video-header {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .official-badge {
+    display: inline-block;
+    background-color: #ff0066;
+    color: white;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-radius: 2px;
+  }
+  
+  .video-header h3 {
+    color: #006699;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .song-info {
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .video-container {
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 200px;
+    display: block;
+    border: none;
+  }
+  
+  .video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  /* Ẩn placeholder khi iframe đã load */
+  .video-container.loaded .video-placeholder {
+    display: none;
+  }
+  
+  .play-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(183, 28, 28, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .play-button:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 25px solid white;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+  }
+  
+  .song-lyrics {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.4;
+    padding: 10px;
+    background-color: #f9f9f5;
+    border-left: 3px solid #b71c1c;
+  }
+  
+  .song-lyrics p {
+    margin-bottom: 5px;
+  }
+  
+  /* Liberation images styling */
+  .liberation-images {
+    text-align: center;
+  }
+  
+  .liberation-images img {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .image-caption {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Bố cục dọc cho phần III */
+  .vertical-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Định dạng phần văn bản */
+  .text-block {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #333;
+  }
+  
+  .text-block p {
+    margin-bottom: 10px;
+  }
+  
+  /* Định dạng phần hình ảnh và chú thích */
+  .image-container {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Định dạng phần gửi bình luận */
+  .comment-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .form-button {
+    text-align: right;
+  }
+  
+  .form-button button {
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .form-button button:hover {
+    background-color: #8B0000;
+  }
+  
+  /* Định dạng footer với danh sách thành viên */
+  .team-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .team-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .member-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .member-column {
+    flex: 1;
+  }
+  
+  .member-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .member-column li {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .article-content {
+      flex-direction: column;
+    }
+    
+    .column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .two-column {
+      flex-direction: column;
+    }
+    
+    .column-left, .column-right {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .member-columns {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .member-column {
+      text-align: center;
+    }
+  }
+  
