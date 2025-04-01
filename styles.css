@@ -1,470 +1,485 @@
-/* Reset CSS */
+/* Reset CSS - Đặt lại tất cả các thuộc tính mặc định của trình duyệt */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Base Styles */
-  body {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f6f4f0;
-    border: 1px solid #ddd;
-  }
-  
-  /* Header Styles */
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .main-title {
-    color: #b71c1c;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-  }
-  
-  .subtitle {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  
-  .divider {
-    height: 1px;
-    background-color: #c51717;
-    margin: 10px 0;
-  }
-  
-  /* Intro Text */
-  .intro-text {
-    font-size: 14px;
-    text-align: justify;
-    margin-bottom: 20px;
-    font-style: italic;
-    line-height: 1.5;
-    color: #b51414;
-  }
-  
-  /* Section Styles */
-  section, .section {
-    margin-bottom: 40px; /* Khoảng cách giữa các section */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước phần tử */
+}
 
-  .section-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #8B0000;
-    text-transform: uppercase;
-  }
-  
-  .subtitle-section {
-    font-size: 14px;
-    text-align: justify;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    color: #444;
-  }
-  
-  .article-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-  }
-  
-  /* Column Layout for Section I */
-  .column {
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Column-specific layouts */
-  .column-1, .column-3 {
-    justify-content: space-between;
-  }
-  
-  .column-2 {
-    justify-content: space-between;
-  }
-  
-  .column-1 .text, .column-3 .text {
-    order: 1;
-    flex: 1;
-  }
-  
-  .column-1 .image, .column-3 .image {
-    order: 2;
-    flex: 1;
-  }
-  
-  .column-2 .image {
-    order: 1;
-    flex: 1;
-  }
-  
-  .column-2 .text {
-    order: 2;
-    flex: 1;
-  }
-  
-  .text {
-    padding: 10px;
-    text-align: justify;
-    font-size: 14px;
-  }
-  
-  .image {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 15px;
-  }
-  
-  .image img {
-    object-fit: cover;
-    display: block;
-  }
-  
-  /* Caption */
-  .caption {
-    font-size: 18px;
-    font-style: italic;
-    color: #aa1d1d;
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-  }
-  
-  .source {
-    font-weight: bold;
-    margin-top: 5px;
-    text-align: right;
-  }
-  
-  /* Bố cục hai cột cho Phần II */
-  .two-column {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .column-left, .column-right {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Poetry section styling */
-  .poetry {
-    margin-bottom: 20px;
-    background-color: #f9f9f5;
-    padding: 15px;
-    border-left: 3px solid #b71c1c;
-  }
-  
-  .poetry h3 {
-    color: #b71c1c;
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .poem-text {
-    font-style: italic;
-    line-height: 1.4;
-    font-size: 13px;
-  }
-  
-  .poem-text p {
-    margin-bottom: 5px;
-  }
-  
-  .poem-author {
-    font-size: 20px;
-    text-align: right;
-    margin-top: 10px;
-    font-style: italic;
-    color:#b11616
-  }
-  /* Historical images styling */
-  .historical-images {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .historical-images img {
-    width: 100%;
-    border: 1px solid #ddd;
-    display: block;
-  }
-  
-  /* Video section styling */
-  .video-section {
-    margin-bottom: 20px;
-  }
-  
-  .video-header {
-    margin-bottom: 15px;
-    position: relative;
-  }
-  
-  .official-badge {
-    display: inline-block;
-    background-color: #ff0066;
-    color: white;
-    padding: 3px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    border-radius: 2px;
-  }
-  
-  .video-header h3 {
-    color: #006699;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .song-info {
-    font-size: 13px;
-    margin-bottom: 10px;
-    font-style: italic;
-  }
-  
-  .video-container {
-    margin-bottom: 15px;
-    background-color: #f0f0f0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .video-container iframe {
-    width: 100%;
-    height: 200px;
-    display: block;
-    border: none;
-  }
-  
-  .video-placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  /* Ẩn placeholder khi iframe đã load */
-  .video-container.loaded .video-placeholder {
-    display: none;
-  }
-  
-  
-  .song-lyrics {
-    font-size: 13px;
-    text-align: justify;
-    line-height: 1.4;
-    padding: 10px;
-    background-color: #f9f9f5;
-    border-left: 3px solid #b71c1c;
-  }
-  
-  .song-lyrics p {
-    margin-bottom: 5px;
-  }
-  
-  /* Liberation images styling */
-  .liberation-images {
-    text-align: center;
-  }
-  
-  .liberation-images img {
-    width: 100%;
-    border: 1px solid #ddd;
-    margin-bottom: 8px;
-    display: block;
-  }
-  
-  .image-caption {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 5px;
-    color: #666;
-    text-align: center;
-  }
-  
-  /* Bố cục dọc cho phần III */
-  .vertical-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-  
-  /* Định dạng phần văn bản */
-  .text-block {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    color: #333;
-  }
-  
-  .text-block p {
-    margin-bottom: 10px;
-  }
-  
-  /* Định dạng phần hình ảnh và chú thích */
-  .image-container {
-    margin: 15px 0;
-    text-align: center;
-  }
-  
-  .image-container img {
-    max-width: 50%;
-    border: 1px solid #ddd;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  /* Định dạng phần gửi bình luận */
-  .comment-section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-    font-family: inherit;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    min-height: 80px;
-  }
-  
-  .form-button {
-    text-align: right;
-  }
-  
-  .form-button button {
-    background-color: #b71c1c;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .form-button button:hover {
-    background-color: #8B0000;
-  }
-  
-  /* Định dạng footer với danh sách thành viên */
-  .team-footer {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #ddd;
-  }
-  
-  .team-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  .member-columns {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .member-column {
-    flex: 1;
-  }
-  
-  .member-column ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .member-column li {
-    font-size: 13px;
-    color: #444;
-    margin-bottom: 5px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .article-content {
-      flex-direction: column;
-    }
-    
-    .column {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    
-    .two-column {
-      flex-direction: column;
-    }
-    
-    .column-left, .column-right {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    
-    .member-columns {
-      flex-direction: column;
-      gap: 15px;
-    }
-    
-    .member-column {
-      text-align: center;
-    }
-  }
-  
+/* Base Styles - Kiểu dáng cơ bản cho toàn trang */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6; /* Khoảng cách giữa các dòng */
+  color: #333; 
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; /* Căn giữa container */
+  padding: 20px; 
+  background-color: #f6f4f0; 
+  border: 1px solid #ddd; 
+}
+
+/* Header Styles - Định dạng phần đầu trang */
+header {
+  text-align: center; /* Căn giữa nội dung header */
+  margin-bottom: 20px; 
+}
+
+.main-title {
+  color: #b71c1c; 
+  font-size: 28px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+}
+
+.subtitle {
+  font-style: italic; 
+  margin-bottom: 10px; 
+}
+
+.divider {
+  height: 1px;
+  background-color: #c51717; 
+  margin: 10px 0; 
+}
+
+
+/* Intro Text - Định dạng phần giới thiệu */
+.intro-text {
+  font-size: 14px; 
+  text-align: justify; /* Căn đều hai bên */
+  margin-bottom: 20px; 
+  font-style: italic; 
+  line-height: 1.5; /* Khoảng cách giữa các dòng */
+  color: #b51414; 
+}
+
+/* Section Styles - Định dạng các phần nội dung */
+section, .section {
+  margin-bottom: 40px; /* Khoảng cách giữa các section */
+}
+
+.section-title {
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-bottom: 15px;
+  color: #8B0000; 
+  text-transform: uppercase; /* Chuyển thành chữ hoa */
+}
+
+.subtitle-section {
+  font-size: 14px; 
+  text-align: justify; /* Căn đều hai bên */
+  margin-bottom: 20px; 
+  line-height: 1.5; 
+  color: #444; 
+}
+
+.article-content {
+  display: flex; /* Sử dụng Flexbox để sắp xếp các cột */
+  justify-content: space-between; /* Phân bố không gian giữa các cột */
+  gap: 15px; /* Khoảng cách giữa các cột */
+}
+
+
+
+/* Bố cục cột cho Phần I */
+.column {
+  width: 32%; /* Chiều rộng mỗi cột (3 cột) */
+  display: flex; /* Sử dụng Flexbox bên trong mỗi cột */
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+}
+
+/* Column-specific layouts - Bố cục cụ thể cho từng cột */
+.column-1, .column-3 {
+  justify-content: space-between; /* Phân bố không gian giữa các phần tử */
+}
+
+.column-2 {
+  justify-content: space-between; /* Phân bố không gian giữa các phần tử */
+}
+
+/* Sắp xếp thứ tự hiển thị trong cột 1 và 3: văn bản trên, hình ảnh dưới */
+.column-1 .text, .column-3 .text {
+  order: 1; /* Hiển thị đầu tiên */
+  flex: 1; /* Chiếm không gian có thể */
+}
+
+.column-1 .image, .column-3 .image {
+  order: 2; /* Hiển thị thứ hai */
+  flex: 1; /* Chiếm không gian có thể */
+}
+
+/* Sắp xếp thứ tự hiển thị trong cột 2: hình ảnh trên, văn bản dưới */
+.column-2 .image {
+  order: 1; /* Hiển thị đầu tiên */
+  flex: 1; /* Chiếm không gian có thể */
+}
+
+.column-2 .text {
+  order: 2; /* Hiển thị thứ hai */
+  flex: 1; /* Chiếm không gian có thể */
+}
+
+.text {
+  padding: 10px; 
+  text-align: justify; /* Căn đều hai bên */
+  font-size: 18px; 
+}
+
+.image {
+  background-color: #f0f0f0; 
+  border: 1px solid #ddd; 
+  display: flex; /* Sử dụng Flexbox để căn giữa hình ảnh */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước */
+  position: relative; /* Đặt vị trí tương đối cho phần tử con */
+  margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+}
+
+.image img {
+  object-fit: cover; /* Đảm bảo hình ảnh lấp đầy không gian mà không bị méo */
+  display: block; /* Loại bỏ khoảng trống dưới hình ảnh */
+}
+
+/* Caption - Định dạng phần chú thích */
+.caption {
+  font-size: 18px; 
+  font-style: italic; 
+  color: #aa1d1d; 
+  text-align: center; 
+  margin-top: 20px; 
+  border-top: 1px solid #ddd; 
+  padding-top: 10px; 
+}
+
+.source {
+  font-weight: bold; 
+  margin-top: 5px; 
+  text-align: right; /* Căn phải */
+}
+
+
+
+/* Bố cục hai cột cho Phần II */
+.two-column {
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: space-between; /* Phân bố không gian giữa các cột */
+  gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+.column-left, .column-right {
+  width: 48%; /* Chiều rộng mỗi cột (gần 50%) */
+  display: flex; /* Sử dụng Flexbox bên trong mỗi cột */
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+}
+
+/* Poetry section styling - Định dạng phần thơ */
+.poetry {
+  margin-bottom: 20px; 
+  background-color: #f9f9f5; 
+  padding: 15px; 
+  border-left: 3px solid #b71c1c; 
+}
+
+.poetry h3 {
+  color: #b71c1c; 
+  font-size: 16px; 
+  margin-bottom: 10px; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.poem-text {
+  font-style: italic; /* Chữ nghiêng */
+  line-height: 1.4; /* Khoảng cách giữa các dòng */
+  font-size: 13px; 
+}
+
+.poem-text p {
+  margin-bottom: 5px; /* Khoảng cách dưới mỗi dòng thơ */
+}
+
+.poem-author {
+  font-size: 20px; 
+  text-align: right; 
+  margin-top: 10px;
+  font-style: italic; 
+  color: #b11616; 
+}
+
+/*Định dạng phần hình ảnh lịch sử */
+.historical-images {
+  display: flex; 
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.historical-images img {
+  width: 100%; 
+  border: 1px solid #ddd; 
+  display: block; 
+}
+
+/*Định dạng phần video */
+.video-section {
+  margin-bottom: 20px; 
+}
+
+.video-header {
+  margin-bottom: 15px; 
+  position: relative; /* Đặt vị trí tương đối cho phần tử con */
+}
+
+.official-badge {
+  display: inline-block; /* Hiển thị dạng khối nội tuyến */
+  background-color: #ff0066; 
+  color: white; 
+  padding: 3px 10px; 
+  font-size: 14px; 
+  font-weight: bold; 
+  margin-bottom: 8px; 
+  border-radius: 2px; 
+}
+
+.video-header h3 {
+  color: #006699; 
+  font-size: 16px; 
+  font-weight: bold; 
+}
+
+.song-info {
+  font-size: 13px; 
+  margin-bottom: 10px; 
+  font-style: italic; 
+}
+
+.video-container {
+  margin-bottom: 15px; 
+  background-color: #f0f0f0; 
+  position: relative; /* Đặt vị trí tương đối cho phần tử con */
+  overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước */
+}
+
+.video-container iframe {
+  width: 100%; 
+  height: 200px; 
+  display: block; /* Loại bỏ khoảng trống dưới iframe */
+  border: none; /* Loại bỏ viền mặc định */
+}
+
+.video-placeholder {
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 0;
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  z-index: 1; /* Đặt lớp hiển thị */
+}
+
+
+.song-lyrics {
+  font-size: 13px; 
+  text-align: justify; 
+  line-height: 1.4; 
+  padding: 10px; 
+  background-color: #f9f9f5; 
+  border-left: 3px solid #b71c1c; 
+}
+
+.song-lyrics p {
+  margin-bottom: 5px; 
+}
+
+/*Định dạng phần hình ảnh giải phóng */
+.liberation-images {
+  text-align: center; /
+}
+
+.liberation-images img {
+  width: 100%; 
+  border: 1px solid #ddd; 
+  margin-bottom: 8px; 
+  display: block; 
+}
+
+.image-caption {
+  font-size: 12px; 
+  font-style: italic; 
+  margin-top: 5px;
+  color: #666; 
+  text-align: center; 
+}
+
+
+
+/* Bố cục dọc cho phần III */
+.vertical-layout {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  gap: 20px; 
+  margin-bottom: 30px; 
+}
+
+/* Bố cục 3 cột ngang cho Phần III */
+.three-column-layout {
+  display: flex;
+  flex-direction: row; /* Sắp xếp theo chiều ngang */
+  gap: 20px; 
+  margin-bottom: 30px; 
+}
+
+/* Định dạng cột chữ bên trái và phải - hẹp hơn */
+.text-column {
+  flex: 0.8; /* Giảm độ rộng xuống (nhỏ hơn 1) */
+  padding: 0 10px; /* Khoảng cách nội dung với viền */
+}
+
+/* Định dạng cột ảnh ở giữa - rộng hơn */
+.image-column {
+  flex: 2; /* Tăng độ rộng lên (lớn hơn 1) */
+  display: flex; 
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  gap: 30px; 
+}
+
+/* Định dạng phần văn bản */
+.text-block {
+  font-size: 20px; 
+  line-height: 1.5; 
+  text-align: justify; /* Căn đều hai bên */
+  color: #333; 
+}
+
+.text-block p {
+  margin-bottom: 10px; /* Khoảng cách dưới mỗi đoạn */
+}
+
+/* Định dạng cho ảnh và caption - Lưu ý có sự trùng lặp với phần định nghĩa trước */
+.image-container img {
+  width: 100%; 
+  display: block; 
+}
+
+.image-caption {
+  margin-top: 5px; 
+  font-size: 16px; 
+  text-align: center; 
+  color: #666; 
+}
+
+/* Định dạng phần hình ảnh và chú thích - Lưu ý có sự trùng lặp */
+.image-container {
+  margin-bottom: 15px; 
+  text-align: center; 
+}
+
+.image-container img {
+  width: 100%; 
+  border: 5px solid #ddd; 
+  display: block; 
+  margin: 0 auto 5px; /* Căn giữa và khoảng cách dưới */
+}
+
+.image-caption {
+  font-size: 12px; 
+  color: #666; 
+  text-align: center; 
+}
+
+/* Định dạng phần gửi bình luận */
+.comment-section {
+  margin-top: 30px; 
+  margin-bottom: 30px;
+  background-color: #f9f9f9; 
+  padding: 20px; 
+  border-radius: 4px; /* Bo góc */
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px; 
+  color: #555; 
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; 
+  padding: 8px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  font-size: 14px; 
+  font-family: inherit; 
+}
+
+.form-group textarea {
+  resize: vertical; /* Chỉ cho phép kéo dài theo chiều dọc */
+  min-height: 80px; /* Chiều cao tối thiểu */
+}
+
+.form-button {
+  text-align: right; 
+}
+
+.form-button button {
+  background-color: #b71c1c; 
+  color: white; 
+  border: none; 
+  padding: 8px 20px; 
+  border-radius: 4px; /* Bo góc */
+  cursor: pointer; /* Con trỏ chuột dạng bàn tay */
+  font-size: 14px; 
+}
+
+.form-button button:hover {
+  background-color: #008b45; /* Màu đỏ sẫm khi hover */
+}
+
+/* Định dạng footer với danh sách thành viên */
+.team-footer {
+  margin-top: 20px; 
+  padding-top: 15px; 
+  border-top: 1px solid #ddd; 
+}
+
+.team-title {
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 15px; 
+}
+
+.member-columns {
+  display: flex; 
+  justify-content: space-between; /* Phân bố không gian giữa các cột */
+}
+
+.member-column {
+  flex: 1; /* Chiếm không gian có thể */
+}
+
+.member-column ul {
+  list-style-type: none; /* Loại bỏ dấu đầu dòng */
+  padding: 0; /* Loại bỏ padding mặc định */
+  margin: 0; /* Loại bỏ margin mặc định */
+}
+
+.member-column li {
+  font-size: 13px; /* Kích thước chữ */
+  color: #444; /* Màu chữ xám đậm */
+  margin-bottom: 5px; /* Khoảng cách dưới mỗi mục */
+}
